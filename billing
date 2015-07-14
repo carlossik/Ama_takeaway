@@ -1,0 +1,18 @@
+module BillIng
+  def billed
+    puts  "Your Total Bill is "  + "#{menu_item.to_s}}"
+  end
+
+  def notify_order_manager
+    puts "Order Has been successfully delivered to the order manager"
+#this code here will notify order manager and send details of order .
+  end
+  
+  def order_number
+    puts "Your order Number is "  + rand(100..999).to_s
+  end
+
+  def menu_item
+    return @menu_item
+  end
+end
